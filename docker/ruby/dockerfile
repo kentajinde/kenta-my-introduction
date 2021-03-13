@@ -1,0 +1,5 @@
+FROM  ruby
+RUN gem install sass
+RUN gem install compass
+WORKDIR /var/www/html
+CMD ["sass", "--style", "expanded", "--watch", "scss:css"]

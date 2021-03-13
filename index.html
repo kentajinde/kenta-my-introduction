@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KENTA JINDE's PORTFOLIO</title>
+  <link rel="stylesheet" href="css/index.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="title">Kenta's portfolio</div>
+    <nav class="tab">
+      <label for="about" class="active">about</label>
+      <label for="skill">skill</label>
+      <label for="product">product</label>
+    </nav>
+  </header>
+  <main>
+    <div class="content-wrapper">
+      <input type="radio" name="tab" id="about" checked>
+      <div class="content about">
+        <h1>ABOUT</h1>
+        <div>
+          <img src="img/my_img.jpg">
+          <div>
+            <h3>陣出 健太</h3>
+            <h3>(JINDE KENTA)</h3>
+            <p>　初めまして、陣出健太と申します。現在は大阪市の中学校で事務職員をしており、公務員として働いております。<br>
+            　プログラミングについては2020年10月より独学で勉強を開始し、フロントエンドの基礎と、それに伴うバックエンドの基礎を習得しました。勉強の教材は主にドットインストールやUdemy等の動画教材を用い、次いで電子書籍やMDNで分からない部分を補完し、さらに細かい部分はStack OverflowやQiita、teratailといったQ&Aサイトを参考にしました。<br>
+            　勉強方法として独学を貫徹したことで、プログラミングにおいて必ず必要となる<strong>「調べる力」</strong>を身に着けることができました。また毎日勉強をする習慣や、プログラミング学習のメソッドを自分の中で作れたのも、大きな収穫となりました。
+            <p>　何よりも先ず<strong>楽しむこと</strong>をモットーに、日進月歩で進んで行く技術トレンドをキャッチアップしていきたいと思います！</p>
+            </p>
+            <p id="open">余談ですが、趣味でたまに絵を描きます。。</p>
+          </div>
+          <div id="modal-mask"></div>
+          <div id="modal">
+            <span class="material-icons" id="close">close</span>
+            <section>
+              <img src="img/cat.jpg">
+              <img src="img/game.jpg">
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <input type="radio" name="tab" id="skill">
+      <div class="content skill">
+        <h1>SKILL</h1>
+        <div>
+          <img src="img/html.png">
+          <p>基本的なタグとその属性は学習済み。今後はhtmlにおけるSEO対策について深く勉強していきたい。</p>
+        </div>
+        <div>
+          <img src="img/css.png">
+          <p>Bootstrapや、Sass(SCSS)について学習済み。今後はさらなる技術の拡張と、メンテナンス性について勉強していく。</p>
+        </div>
+        <div>
+          <img src="img/javascript.png">
+          <p>クラス構文や、非同期処理、コールバック関数など学習済み。今後は開発効率などを考えて、Typescriptについて勉強していく。</p>
+        </div>
+        <div>
+          <img src="img/react.png">
+          <p>crud機能を備えた、簡単なTodo管理アプリは作成可能。今後さらに勉強を進めていき、先ずは簡単なSPAサイトを作成したい。</p>
+        </div>
+        <div>
+          <img src="img/php.png">
+          <p>webアプリケーションの仕組みを1から知るために学習。今後はフレームワークのLaravelや、Ruby on Railsを本格的に学習していく。</p>
+        </div>
+        <div>
+          <img src="img/mysql.png">
+          <p>基礎的なSQL構文について学習済み。今後は再帰CTEや正規化、インデックスなどを用いたより複雑なデータベース設計に挑戦する。</p>
+        </div>
+        <div>
+          <img src="img/docker.png">
+          <p>Docker利用の流れや、Docker Composeについて学習済み。今後はCIツールについて勉強し、Dockerを用いたCICDパイプラインの構築を行う。</p>
+        </div>
+        <div>
+          <img src="img/github.png">
+          <p>Git、GitHubについての基本コマンドや仕組みを学習。今後は複数人での開発を想定して、rebaseやmergetoolについて勉強していく。</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <input type="radio" name="tab" id="product">
+      <div class="content product">
+        <h1>PRODUCT</h1>
+        <a href="https://kenta-my-portfolio.herokuapp.com/" target="_blank">
+          <div class="product-img">
+            <div class="mask">
+            </div>
+          </div>
+        </a>
+        <div class="detail">
+          <p><span>TITLE</span>Best Book</p>
+          <p><span>SKILL</span>HTML/CSS/JS/PHP</p>
+          <p><span>DETAIL</span>ユーザー同士が本を紹介できるサービスです。</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright Kenta All right reserved.</p>
+    </footer>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>

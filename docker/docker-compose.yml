@@ -1,0 +1,8 @@
+version: "3"
+services:
+  scss:
+    build: ./ruby
+    volumes: 
+      - ../:/var/www/html
+    tty: true
+    stdin_open: true
