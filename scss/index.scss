@@ -253,12 +253,15 @@ footer{
     .content.about{
       > div{
         display: flex;
+        div{
+          padding-left: 30px;
+        }
+        h3{
+          font-size: 2vw;
+        }
         img{
           width: 35vw;
           height: 55vw;
-        }
-        div{
-          padding-left: 30px;
         }
       }
       #modal{
